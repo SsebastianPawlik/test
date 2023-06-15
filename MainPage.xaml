@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- MainPage.xaml -->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Apibaza.MainPage">
+
+    <StackLayout Padding="30">
+        <Label Text="Search for movies" FontSize="30" />
+        <RadioButton x:Name="TitleRadioButton" Content="By title" GroupName="SearchMode" IsChecked="True" />
+        <RadioButton x:Name="YearRadioButton" Content="By year" GroupName="SearchMode" />
+        <RadioButton x:Name="ActorRadioButton" Content="By actors" GroupName="SearchMode" />
+        <RadioButton x:Name="MultipleActorsRadioButton" Content="Multiple Actors" GroupName="SearchMode"/>
+        <Entry x:Name="SearchEntry" Placeholder="Enter your search term" />
+        <Button Text="Search" Clicked="SearchButton_Clicked" />
+    </StackLayout>
+
+
+
+</ContentPage>
+
+
